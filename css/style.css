@@ -28,14 +28,26 @@
 }
 
 .products {
-    border-style: solid;
+    display: none;
     margin-top: 1.5em;
+    background-color: #e6e6e6;
+    border-radius: 0.5em;
 }
 
-.products th, .products td,
-.shoppingCart th, .shoppingCart td {
+.shoppingCart {
+    display: none;
+    margin-top: 1.5em;
+    background-color: #e6e6e6;
+    border-radius: 0.5em;
+}
+
+.products th, .shoppingCart th {
+    background-color: #b3adad;
     text-align: center;
-    border-style: solid;
+}
+
+.products td, .shoppingCart td {
+    text-align: center;
 }
 
 #noProduct {
@@ -56,17 +68,12 @@
 .deleteProduct {
     cursor: pointer;
     font-size:20px;
+    margin-left: 0.5em;
     color: rgb(187, 26, 26);
 }
 
 .deleteProduct:hover {
     color: rgb(228, 95, 95);
-}
-
-.shoppingCart {
-    border-style: solid;
-    margin-top: 1.5em;
-    /* display: none; */
 }
 
 .err {

@@ -35,6 +35,7 @@ const renderProducts = products => {
         renderNoProducts();
         return;
     }
+    printShoppingCartTable();
     renderTableHeader();
     products.forEach(product => {
         renderProduct(product);
@@ -58,7 +59,6 @@ const getSearchProductByTitle = (products, value) => {
     products.forEach(product => {
         if (product.title === value) {
             renderProduct(product);
-            console.log('Pero tu no entras por aquí?');
             return true;
         }
     });
@@ -68,6 +68,7 @@ const getSearchProductByTitle = (products, value) => {
 const getSearchProduct = async (value) => {
     try {
         resetProductTables();
+        renderTableHeader();
         let counter = 0;
         const res = await axios.get('/data/products.json');
         const bebidas = res.data['bebidas'];
@@ -184,4 +185,8 @@ const onDrop = event => {
     const arrayData = data.split(",");
     addProductToCart(arrayData[0], arrayData[1]);
     event.dataTransfer.clearData();
+}
+
+const printShoppingCartTable = () => {
+    document.querySelector('.shoppingCart').style.display = "table";
 }
