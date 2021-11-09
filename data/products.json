@@ -1,0 +1,55 @@
+{
+    "bebidas" : [
+        {
+            "id": "bebidas1",
+            "title": "Batido de chocolate",
+            "imagePath": "image-not-found.png",
+            "brand": "Puleva",
+            "category": "Bebidas",
+            "description": "Batido de chocolate sin leche",
+            "price": "1.35"
+        },
+        {
+            "id": "bebidas1",
+            "title": "Batido de vainilla",
+            "imagePath": "image-not-found.png",
+            "brand": "Puleva",
+            "category": "Bebidas",
+            "description": "Batido de vainilla sin leche",
+            "price": "1.20"
+        }
+    ],
+    "alimentacion" : [
+        {
+            "id": "alimentacion1",
+            "title": "Pipas",
+            "imagePath": "image-not-found.png",
+            "brand": "Facunto",
+            "category": "Alimentación",
+            "description": "Pipas en su punto de sal",
+            "price": "1.90"
+        }
+    ],
+    "aperitivos" : [
+        {
+            "id": "aperitivos1",
+            "title": "Aceitunas",
+            "imagePath": "image-not-found.png",
+            "brand": "Rigoberto",
+            "category": "Aperitivos",
+            "description": "Aceitunas de las buenas",
+            "price": "2.45"
+        }
+    ],
+    "lacteos": [
+        {
+            "id": "lacteos1",
+            "title": "Yogurt de coco",
+            "imagePath": "image-not-found.png",
+            "brand": "Alpro",
+            "category": "Lacteos",
+            "description": "Yogurt sabor a coco",
+            "price": "3.10"
+        }
+    ]
+}
